@@ -28,7 +28,6 @@ function makeGrid(height, width) {
 		}
 	}
 	myTableDiv.addEventListener('click', respondToTheClick);
-	// myTableDiv.appendChild(table);
 	myTableDiv.appendChild(tableBody);
 }
 
@@ -36,5 +35,3 @@ sizePicker.addEventListener('submit', function (event) {
 	event.preventDefault();
 	makeGrid(height, width)
 });
-
-// sizePicker.addEventListener("submit", makeGrid(height,width));
