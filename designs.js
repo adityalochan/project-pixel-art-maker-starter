@@ -9,7 +9,11 @@ function respondToTheClick(evt) {
 	evt.target.style.backgroundColor = color.value;
 }
 
-// function to create grid based on user entered height and width 
+/**
+  * @desc function to create grid based on user entered height and width
+  * @param int $width - number of squares representing the width of the grid
+  * @param int $height - number of squares representing the height of the grid
+*/
 function makeGrid(height, width) {
 	// Initializing table and laoding value from html ID 
 	var myTableDiv = document.getElementById('pixelCanvas');
@@ -33,7 +37,9 @@ function makeGrid(height, width) {
 	myTableDiv.appendChild(tableBody);
 }
 
-// Event listener for click event on submit button which leads to makeGrid function call to make grid 
+/**
+ * @desc Event listener for click event on submit button which leads to makeGrid function call to make grid 
+**/
 sizePicker.addEventListener('submit', function(event) {
 	event.preventDefault();
 	makeGrid(height, width)
